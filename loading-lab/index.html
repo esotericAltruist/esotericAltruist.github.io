@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Loading Animation</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* This centers vertically */
+        perspective: 1000px; /* Adjust the perspective depth */
+      }
+      
+      .animated-el {
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        opacity: 0%;
+        rotate: 90deg;
+
+        animation: rotate .80s cubic-bezier(.17,.67,.54,.18) infinite;
+        animation-direction: reverse;
+        
+      }
+
+      .animated-el:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+
+      .animated-el:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+
+      .animated-el:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+
+      .animated-el:nth-child(4) {
+        animation-delay: 0.25s;
+      }
+
+      .turntable {
+        /* animation: turntable 15s ease-in-out infinite; */
+
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg) translateX(100px);
+          opacity: 25%;
+          background-color: lightpink;
+        }
+        25% {
+          transform: rotate(90deg) translateX(100px);
+          opacity: 100%;
+          background-color: pink;
+        }
+        50% {
+          transform: rotate(180deg) rotateY(90deg) translateX(100px);
+          opacity: 100%;
+          background-color: red;
+        }
+        75% {
+          transform: rotate(270deg) translateX(100px);
+          opacity: 100%;
+          background-color: pink;
+        }
+        100% {
+          transform: rotate(360deg) translateX(100px);
+          opacity: 25%;
+          background-color: lightpink;
+        }
+      }
+
+      @keyframes turntable {
+        0% {
+          transform: rotateY(0deg);
+        }
+        100% {
+          transform: rotateY(360deg);
+        }
+
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Loading Animation</h1>
+    <div class="container">
+      <div class="turntable">
+        <div class="animated-el"></div>
+        <div class="animated-el"></div>
+        <div class="animated-el"></div>
+        <div class="animated-el"></div>
+      </div>
+             
+    </div>
+  </body>
+</html>
