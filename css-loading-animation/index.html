@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>CSS Loading Animation</title>
     <style>
       .container {
@@ -19,64 +20,100 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 50vw;
-        height: 50vh;
+        width: 70vw;
+        height: 70vh;
       }
-
-      /* #svg-morning {
-        opacity: 100%;
-      }
-
-      #svg-dusk {
-        opacity: 0%;
-      }
-
-      #svg-night {
-        opacity: 0%;
-      } */
-
-      /* #Orange_Yellow {
-        animation: cycle 12s ease-in-out infinite;
-      }
-
-      #dusk-linear-gradient {
-        animation: cycle 12s ease-in-out 3s infinite;
-      }
-
-      #night-linear-gradient {
-        animation: cycle 12s ease-in-out 3s infinite;
-      } */
 
       #svg-morning {
-        animation: cycle 18s ease-in infinite;
+        /* display: none; */
+        /* animation: morning 15s ease-in-out infinite; */
       }
 
       #svg-dusk {
-        opacity: 0%;
-        animation: cycle 18s ease-in 6s infinite;
+        /* animation: dusk 15s ease-in-out infinite; */
+        display: none;
       }
 
       #svg-night {
-        opacity: 0%;
-        animation: cycle 18s ease-in 12s infinite;
+        display: none;
+        /* animation: night 15s ease-in-out infinite; */
       }
 
       #room {
         z-index: -1;
       }
 
-      @keyframes cycle {
+      #log-stand-armR {
+        animation: cook 3s linear reverse infinite;
+        transform-origin: top left;
+      }
+
+      @keyframes cook {
         0% {
-          opacity: 0%
+          transform: rotateY(0deg) rotateZ(0deg) ;
         }
         50% {
-          opacity: 100%
+          transform: rotateZ(-1deg) rotateY(5deg) ;
         }
         100% {
-          opacity: 0%
+          transform: rotateY(0deg) rotateZ(0deg) ;
         }
-
       }
+
+      @keyframes morning {
+      0% {
+        opacity: 0%
+      }
+      25% {
+        opacity: 0%
+      }
+      50% {
+        opacity: 0%
+      }
+      75% {
+        opacity: 100%
+      }
+      100% {
+        opacity: 0%
+      }
+      } 
+
+      @keyframes dusk {
+      0% {
+        opacity: 0%
+      }
+      25% {
+        opacity: 100%
+      }
+      50% {
+        opacity: 0%
+      }
+      75% {
+        opacity: 0%
+      }
+      100% {
+        opacity: 0%
+      }
+      } 
+
+      @keyframes night {
+      0% {
+        opacity: 0%
+      }
+      25% {
+        opacity: 0%
+      }
+      50% {
+        opacity: 100%
+      }
+      75% {
+        opacity: 0%
+      }
+      100% {
+        opacity: 0%
+      }
+      } 
+
       
     </style>
   </head>
@@ -2167,13 +2204,6 @@
             
         </div>
 
-      <p>Loading...</p>
-      <!-- <div class="turntable">
-        <div class="animated-el"></div>
-        <div class="animated-el"></div>
-        <div class="animated-el"></div>
-        <div class="animated-el"></div>
-      </div>   -->
     </div>
   </body>
 </html>
