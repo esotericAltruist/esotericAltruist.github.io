@@ -29,9 +29,51 @@
         animation: morning 15s ease-in-out infinite;
       }
 
+      #log-stand-armR {
+        transform-origin: left top; 
+        transform-box: fill-box;
+        animation: rotate-right 2s ease-in-out infinite;
+      }
+
+      #log-stand-earR {
+        transform-origin: center bottom; 
+        transform-box: fill-box;
+        animation: ear-twitch 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+      }
+
+      #log-stand-earL {
+        transform-origin: center bottom; 
+        transform-box: fill-box;
+        animation: ear-twitch 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+      }
+
       #svg-dusk {
         animation: dusk 15s ease-in-out infinite;
         /* display: none; */
+      }
+
+      #log-sit-armR {
+        transform-origin: left top; 
+        transform-box: fill-box;
+        animation: ear-twitch 1s ease-in-out infinite;
+      }
+
+      #log-sit-armL {
+        transform-origin: left top; 
+        transform-box: fill-box;
+        animation: ear-twitch 1s ease-in-out .5s infinite;
+      }
+
+      #log-sit-earR {
+        transform-origin: center bottom; 
+        transform-box: fill-box;
+        animation: ear-twitch .75s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+      }
+
+      #log-sit-earL {
+        transform-origin: center bottom; 
+        transform-box: fill-box;
+        animation: ear-twitch 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
       }
 
       #svg-night {
@@ -39,26 +81,55 @@
         animation: night 15s ease-in-out infinite;
       }
 
+      #log-sleep {
+        transform-origin: center center; 
+        transform-box: fill-box;
+        animation: breathe 2s ease-in-out infinite;
+      }
+
       #room {
         z-index: -1;
       }
 
-      #log-stand-armR {
-        /* animation: cook 5s linear infinite; */
-        /* transform-origin: bottom right; */
-      }
 
       
 
-      @keyframes cook {
+      @keyframes rotate-right {
         0% {
           transform: rotateZ(0deg);
         }
         50% {
-          transform: rotateZ(360deg);
+          transform: rotateZ(-15deg);
+        }
+        60% {
+          transform: rotateZ(-15deg);
         }
         100% {
           transform: rotateZ(0deg);
+        }
+      }
+
+      @keyframes ear-twitch {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        50% {
+          transform: rotateZ(-5deg);
+        }
+        100% {
+          transform: rotateZ(0deg);
+        }
+      }
+
+      @keyframes breathe {
+        0% {
+          transform: scaleY(100%);
+        }
+        50% {
+          transform: scaleY(105%);
+        }
+        100% {
+          transform: scaleY(100%);
         }
       }
 
