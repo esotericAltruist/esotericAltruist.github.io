@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LottieFiles Animation Showcase</title>
+    <style>
+
+      body {
+        background-color: #E0D7C4;
+      }
+
+      #banner {
+        display: flex;
+        flex-direction: row;
+        height: 20vh;
+        width: 100%;
+        background-color: #475E47;
+      }
+
+      #header {
+        flex-grow: 6;
+        color: #F2EFE9;
+        text-decoration: underline;
+        text-align: center;
+        font-family: Fascinate;
+        font-size: 8rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+      }
+
+      #animationContainer {
+        display: flex;
+        align-content: justify;
+        background-color: #F2EFE9;
+        margin: 10%;
+        border: 10px solid #475D47;
+        border-radius: 25px;  
+      }
+
+      #container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      dotlottie-player {
+        width: 10px;
+        flex-grow: 1;
+      }
+
+      a:visited {
+        color: #F2EFE9;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="banner">
+      <div id="header">
+        <a href="https://www.figma.com/proto/yotBCTKRBTIVwvvov8aCf9/Cat-Cafe---Lottie-Framework-Showcase?type=design&node-id=1-2&t=cw6Oe9lVxSgsGdBi-1&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design" target="_blank">
+          Figma Showcase
+        </a>
+      </div>
+    </div>
+
+    <div id="container"> 
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+      <dotlottie-player 
+      src="https://lottie.host/32cc6a07-0309-4653-bc9b-fea82784955c/RfPEi0tjXk.lottie" 
+      background="transparent" 
+      speed="0.5" 
+      direction="1" 
+      mode="normal"   
+      loop 
+      autoplay>
+      </dotlottie-player>
+  
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+      <dotlottie-player src="https://lottie.host/570cd060-2bde-4c18-a646-12c4cfc0c1ae/wKJuDiTbot.json" 
+      background="transparent" 
+      speed="1" 
+      loop autoplay>
+    </dotlottie-player>
+  
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  
+    <dotlottie-player src="https://lottie.host/7e098828-6d01-4c1c-9f35-b60cd241045e/ypahqoEstq.json" 
+      background="transparent" 
+      speed="1" 
+      loop autoplay>
+    </dotlottie-player>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/e85c33bf-48e6-4183-b00b-35d8a243a5fb/gqV1Ut9PMw.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+    </div>
+
+    <div id="animationContainer">
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <dotlottie-player id="animation" src="https://lottie.host/26c5998f-b8b7-4264-8a56-1984f56d1df8/3pkbO4P6qd.lottie" background="transparent" speed="1" style="width: 800px; height: 800px;" loop controls autoplay></dotlottie-player>
+    </div>
+    
+
+ 
+
+    <!-- You can add more elements here -->
+
+    <script>
+      // JavaScript for adding interactivity (if needed)
+
+      // For example: if you want to add a class when an element gets clicked, use code similar to:
+      // const elementX = document.getElementById("elementX");
+      // elementX.addEventListener("click", () => {
+      // elementX.classList.toggle("clicked"); // Adds "clicked" class if it's not there, otherwise it removes it
+      // });
+
+      const element2 = document.getElementById("element2");
+      element2.addEventListener("click", () => {
+        element2.classList.toggle("onClick");
+      });
+    </script>
+  </body>
+</html>
