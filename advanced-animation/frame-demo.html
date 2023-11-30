@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frame By Frame Animation</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* This centers vertically */
+        perspective: 1000px; /* Adjust the perspective depth */
+      }
+
+      .animation {
+        background: url("walkcycle.jpg");
+        height: 360px;
+        width: 400px;
+        animation: sprite .125s steps(10) infinite;
+      }
+
+      @keyframes sprite {
+        from { background-position: 0px;}
+        to { background-position: -4000px; } 
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Frame By Frame Animation</h1>
+    <div class="container">
+             <div class="animation"></div>
+    </div>
+  </body>
+</html>
