@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Arial", sans-serif; /* Choose your preferred font */
+    background-color: #f4f4f4;
+}
+
+.centered-text {
+    margin: 0;
+    text-align: center;
+}
+
+svg {
+    width: 3em;
+}
+
+#hamburger {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1em;
+    top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#hero-img {
+    width: 75vw;
+}
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 60vh;
+    width: 100vw;
+    background-color: #EBE2D4;
+}
+
+#hero-content {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+#hours {
+    color: black;
+}
+
+h3 {
+    margin: .25em 0em;
+}
+
+.hours {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+#order-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EBE2D4;
+    height: 7em;
+    margin: 2em;
+    padding: .5em;
+}
+
+#button-col {
+    left: 50vw;
+    height: 4em;
+    width: 10em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* Add more styling for your content sections */
+.content-section {
+    padding: 50px;
+    background: #f4f4f4; /* Adjust background color as needed */
+}
