@@ -1,9 +1,12 @@
+
+
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: "Arial", sans-serif; /* Choose your preferred font */
+    font-family: 'Josefin Sans', sans-serif; 
     background-color: #f4f4f4;
 }
 
@@ -49,10 +52,12 @@ svg {
     color: white;
     text-align: center;
     z-index: 1;
+    font-family: 'Josefin Sans', sans-serif; 
 }
 
 #button-blue{
     background-color: cadetblue;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #hours {
@@ -72,6 +77,7 @@ h2 {
 }
 
 #order-card {
+    font-family: 'Josefin Sans', sans-serif; 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -83,6 +89,7 @@ h2 {
 }
 
 #button-col {
+    font-family: 'Josefin Sans', sans-serif; 
     left: 50vw;
     height: 4rem;
     width: 10rem;
