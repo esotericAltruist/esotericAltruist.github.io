@@ -3,12 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css">
+    <link id="theme" rel="stylesheet" href="style.css">
+
     <script src="script.js"></script>
     <title>Zondy's Cafe</title>
   </head>
 
   <body>
+    <script>
+      var theme = document.getElementsByTagName('link')[0]; 
+
+      // Change the value of href attribute  
+      // to change the css sheet. 
+      if (screen.width <= 1000) { 
+          theme.setAttribute('href', 'style.css'); 
+      } else { 
+          theme.setAttribute('href', 'desktop-style.css'); 
+      } 
+
+
+    </script>
     <!-- Navigation Bar -->
     <div id="navbar">
         
