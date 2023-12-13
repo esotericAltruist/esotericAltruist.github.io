@@ -7,8 +7,8 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    min-width: 100%;
+    overflow: auto;
     font-family: 'Josefin Sans', sans-serif; 
     font-weight: bold;
     background-color: #caa2a2;
@@ -32,23 +32,23 @@ svg {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    max-width: 100%;
 }
 
 #hero-img {
-    width: 75vw;
+    max-width: 75vw;
 }
 
 #hero-section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 60vh;
-    width: 100vw;
+    height: 65vh;
+    width: 100%;
     background-color: #EBE2D4;
 }
 
 #hero-content {
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +68,8 @@ svg {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    font-size: 6vw;
+    font-size: 3vh;
+    filter: drop-shadow(.25rem .25rem  .25rem rgb(180, 111, 51))
 }
 
 
@@ -153,6 +154,7 @@ svg {
 
 #hours {
     color: black;
+    font-size: 2vh;
 }
 
 h3 {
@@ -160,7 +162,7 @@ h3 {
 }
 
 .hours {
-    margin: 0;
+    margin: 5% 0;
 }
 
 h2 {
@@ -192,6 +194,6 @@ h2 {
 
 /* Add more styling for your content sections */
 .content-section {
-    padding: 50px;
+    padding: 2.5vh;
     background: #f4f4f4; /* Adjust background color as needed */
 }
