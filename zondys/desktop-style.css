@@ -160,7 +160,7 @@ h2 {
     width: 200px;
     height: 60px;
     margin: 20px;
-    display: inline-flex; /* Use flex to center text vertically */
+    display: inline-flex;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     border-radius: 4px;
@@ -178,7 +178,7 @@ h2 {
     border-radius: 4px;
     font-size: 26px;
     color:black;
-    padding:20%
+    padding:20%;
     font-family: sans-serif;
     font-weight:bold;
     z-index:0 ;
