@@ -54,9 +54,86 @@ svg {
     font-family: 'Josefin Sans', sans-serif; 
 }
 
-#button-blue{
+/* #button-blue{
     background-color: cadetblue;
     font-family: 'Josefin Sans', sans-serif;
+} */
+
+#button-blue:hover{
+    background-color: #4AA7C9;
+    scale: 1.1;
+}
+.button-orange:hover{
+    rotate: -15deg;
+}
+.button-orange:active .orange{
+    animation-name: getbig;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.button-orange:active .menutext{
+    color: #E99F2F;
+    transition: 1s;
+    /*animation-name: getsmall;
+    animation-duration: 1s;
+    animation-timing-function: linear;*/
+}
+
+#button-blue {
+    width: 400px;
+    height: 80px;
+    background-color: #388AA9;
+    margin: 20px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    border-radius: 4px;
+    font-size: 26px;
+    color:white;
+    padding-right: 35px;
+    padding-left: 35px;
+    font-family: sans-serif;
+    font-weight:bold;
+
+/* You can add animation/transition code to all elements here */
+}
+/* .button-orange {
+    width: 200px;
+    height: 60px;
+    margin: 20px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 4px;
+} */
+.orange {
+    width: 200px;
+    height: 60px;
+    position:absolute;
+    background-color: #E99F2F;
+    margin: 20px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    border-radius: 4px;
+    font-size: 26px;
+    color:black;
+    padding-right: 35px;
+    padding-left: 35px;
+    font-family: sans-serif;
+    font-weight:bold;
+    z-index: 0;
+}
+
+@keyframes getbig{
+    from{ transform: scale(1)}
+    to{ transform: scale(50)}
+}
+@keyframes getsmall{
+    from{ transform: scale(1)}
+    to{ transform: scale(.02)}
 }
 
 #hours {
@@ -106,83 +183,6 @@ h2 {
     left: 5vw;
     width: 100%;
     height: auto;
-}
-
-#button-blue:hover{
-    background-color: #4AA7C9;
-    scale: 1.1;
-}
-.button-orange:hover{
-    rotate: -15deg;
-}
-.button-orange:active .orange{
-    animation-name: getbig;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-}
-.button-orange:active .menutext{
-    color: #E99F2F;
-    transition: 1s;
-    /*animation-name: getsmall;
-    animation-duration: 1s;
-    animation-timing-function: linear;*/
-}
-
-#button-blue {
-    width: 400px;
-    height: 80px;
-    background-color: #388AA9;
-    margin: 20px;
-    display: inline-flex; /* Use flex to center text vertically */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    text-align: center; /* Center text horizontally */
-    border-radius: 4px;
-    font-size: 26px;
-    color:white;
-    padding-right: 35px;
-    padding-left: 35px;
-    font-family: sans-serif;
-    font-weight:bold;
-
-/* You can add animation/transition code to all elements here */
-}
-.button-orange {
-    width: 200px;
-    height: 60px;
-    margin: 20px;
-    display: inline-flex; /* Use flex to center text vertically */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    border-radius: 4px;
-}
-.orange {
-    width: 200px;
-    height: 60px;
-    position:absolute;
-    background-color: #E99F2F;
-    margin: 20px;
-    display: inline-flex; /* Use flex to center text vertically */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    text-align: center; /* Center text horizontally */
-    border-radius: 4px;
-    font-size: 26px;
-    color:black;
-    padding-right: 35px;
-    padding-left: 35px;
-    font-family: sans-serif;
-    font-weight:bold;
-    z-index: 0;
-}
-
-@keyframes getbig{
-    from{ transform: scale(1)}
-    to{ transform: scale(50)}
-}
-@keyframes getsmall{
-    from{ transform: scale(1)}
-    to{ transform: scale(.02)}
 }
 
 #hidden {
