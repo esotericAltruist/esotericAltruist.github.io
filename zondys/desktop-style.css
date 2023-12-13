@@ -18,6 +18,11 @@ svg {
     width: 3rem;
 }
 
+#section1{
+    margin:10%;
+    padding:5%;
+}
+
 #hamburger {
     display: flex;
     flex-direction: column;
@@ -30,27 +35,28 @@ svg {
 }
 
 #hero-img {
-    width: 75vw;
+    width: 70vw;
 }
 
 #hero-section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 60vh;
+    height: 120vh;
     width: 100vw;
     background-color: #EBE2D4;
 }
 
 #hero-content {
     margin-top: 2rem;
+    padding:5%;
+    margin: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
     text-align: center;
-    z-index: 1;
     font-family: 'Josefin Sans', sans-serif; 
 }
 
@@ -61,6 +67,8 @@ svg {
 
 #hours {
     color: black;
+    padding:5%;
+    margin:5%;
 }
 
 h3 {
@@ -68,11 +76,12 @@ h3 {
 }
 
 .hours {
-    margin: 0;
+    margin: 5%;
 }
 
 h2 {
     text-align: center;
+    
 }
 
 #order-card {
@@ -83,8 +92,8 @@ h2 {
     flex-direction: column;
     background-color: #EBE2D4;
     height: 7rem;
-    margin: 2rem;
-    padding: .5rem;
+    margin: 2%;
+    padding: 5%;
 }
 
 #button-col {
@@ -159,9 +168,9 @@ h2 {
 .orange {
     width: 200px;
     height: 60px;
-    position:absolute;
+    position:relative;
     background-color: #E99F2F;
-    margin: 20px;
+    margin: 10%;
     display: inline-flex; /* Use flex to center text vertically */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
@@ -169,11 +178,10 @@ h2 {
     border-radius: 4px;
     font-size: 26px;
     color:black;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding:20%
     font-family: sans-serif;
     font-weight:bold;
-    z-index: 0;
+    z-index:0 ;
 }
 
 @keyframes getbig{
