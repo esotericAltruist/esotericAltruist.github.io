@@ -205,10 +205,7 @@ h2 {
 }
 
 #artist-img {
-    position: absolute;
-    right: 3rem;
-    z-index: 1;
-    height: 40vh;
+    width: 100vw;
 }
 
 #artist-circle {
