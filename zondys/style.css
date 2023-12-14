@@ -109,25 +109,17 @@ svg {
     rotate: -15deg;
 }
 .button-orange:active .orange{
-    animation-name: getbig;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    transform: scale(50);
+    transition: 1s;
 }
 .button-orange:active .menutext{
     color: #E99F2F;
     transition: 1s;
-    /*animation-name: getsmall;
-    animation-duration: 1s;
-    animation-timing-function: linear;*/
 }
 
 @keyframes getbig{
     from{ transform: scale(1)}
     to{ transform: scale(50)}
-}
-@keyframes getsmall{
-    from{ transform: scale(1)}
-    to{ transform: scale(.02)}
 }
 
 #hours {
