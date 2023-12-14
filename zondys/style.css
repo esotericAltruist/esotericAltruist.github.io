@@ -23,6 +23,13 @@ svg {
     width: 3rem;
 }
 
+.circle {
+    height: 10rem;
+    width: 10rem;
+    background-color: #E99F2F;
+    border-radius: 50%;
+}
+
 #hamburger {
     display: flex;
     flex-direction: column;
@@ -43,8 +50,8 @@ svg {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 65vh;
     width: 100%;
+    padding-bottom: 5vh;
     background-color: #EBE2D4;
 }
 
@@ -100,55 +107,6 @@ svg {
     animation-timing-function: linear;*/
 }
 
-#button-blue {
-    width: 400px;
-    height: 80px;
-    background-color: #388AA9;
-    margin: 20px;
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
-    border-radius: 4px;
-    font-size: 26px;
-    color:yellow;
-    padding-right: 35px;
-    padding-left: 35px;
-    font-family: sans-serif;
-    font-weight:bold;
-}
-
-#button-blue:hover{
-    background-color: #4AA7C9;
-    scale: 1.1;
-}
-
-.orange {
-    width: 200px;
-    height: 60px;
-    position:absolute;
-    background-color: #E99F2F;
-    margin: 20px;
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
-    border-radius: 4px;
-    font-size: 26px;
-    color:black;
-    padding-right: 35px;
-    padding-left: 35px;
-    font-family: sans-serif;
-    font-weight:bold;
-    z-index: 0;
-    left: 45%;
-} 
-
-.menutext{
-    position: absolute;
-    left:45%;
-}
-
 @keyframes getbig{
     from{ transform: scale(1)}
     to{ transform: scale(50)}
@@ -175,16 +133,76 @@ h2 {
     text-align: center;
 }
 
-#order-card {
+#bubble {
+    width: 40vw;
+}
+
+#item-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.menu-items {
+    width: 30vw;
+}
+
+.background-circle {
+    display:flex;
+    width: 28vw;
+    height: 28vw;
+    background-color: #E99F2F;
+    border-radius: 50%;
+    margin-top: -15rem;
+}
+
+#gingerbread-img, #mocha-img, #caramel-img {
+    width: 25vw;
+}
+
+#button-blue {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    width: 75vw;
+    height: 10vh;
+    padding: 0% 10%;
+    border-radius: 4px;
+
+    background-color: #388AA9;
+    color:white;
     font-family: 'Josefin Sans', sans-serif; 
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+#button-blue:hover{
+    background-color: #4AA7C9;
+    scale: 1.1;
+}
+
+#order-card {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    height: 20vh;
+    width: 90vw;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    padding: 2vw;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vh;
     background-color: #EBE2D4;
-    height: 7rem;
-    margin: 2rem;
-    padding: .5rem;
+}
+
+#artist-img {
+    right: 3rem;
+    z-index: 1;
+    height: 40vh;
 }
 
 #carousel {

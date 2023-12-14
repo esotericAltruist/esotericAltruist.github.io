@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+#hidden {
+    display: none;
+}
+
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    min-width: 100%;
+    overflow: auto;
     font-family: 'Josefin Sans', sans-serif; 
-    background-color: #f4f4f4;
+    font-weight: bold;
+    background-color: #caa2a2;
 }
 
 .centered-text {
@@ -18,9 +23,11 @@ svg {
     width: 3rem;
 }
 
-#section1{
-    margin:10%;
-    padding:5%;
+.circle {
+    height: 10rem;
+    width: 10rem;
+    background-color: #E99F2F;
+    border-radius: 50%;
 }
 
 #hamburger {
@@ -32,95 +39,58 @@ svg {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    max-width: 100%;
 }
 
 #hero-img {
-    width: 70vw;
+    max-width: 75vw;
 }
 
 #hero-section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 120vh;
-    width: 100vw;
+    width: 100%;
+    padding-bottom: 5vh;
     background-color: #EBE2D4;
 }
 
 #hero-content {
-    margin-top: 2rem;
-    padding:5%;
-    margin: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
     text-align: center;
+    z-index: 1;
     font-family: 'Josefin Sans', sans-serif; 
-}
-
-#button-blue{
-    background-color: cadetblue;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-#hours {
-    color: black;
-    padding:5%;
-    margin:5%;
-}
-
-h3 {
-    margin: .25rem 0rem;
-}
-
-.hours {
-    margin: 5%;
-}
-
-h2 {
-    text-align: center;
-    
-}
-
-#order-card {
-    font-family: 'Josefin Sans', sans-serif; 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    background-color: #EBE2D4;
-    height: 7rem;
-    margin: 2%;
-    padding: 5%;
 }
 
 #button-col {
     font-family: 'Josefin Sans', sans-serif; 
     left: 50vw;
-    height: 4rem;
-    width: 10rem;
+    height: 18vh;
+    width: 60vw;
+    margin: 2vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    font-size: 3vh;
+    filter: drop-shadow(.25rem .25rem  .25rem rgb(180, 111, 51))
 }
 
-#carousel {
-    max-width: 60vw;
+
+.button-orange {
+    background-color: #E99F2F;
+    padding: 1.5vh 4vw;
+    border-radius: 4px;
+    text-decoration: none;
 }
 
-.carousel-img {
-    position: relative;
-    left: 5vw;
-    width: 100%;
-    height: auto;
+.button-orange:visited {
+    color: black;
 }
 
-#button-blue:hover{
-    background-color: #4AA7C9;
-    scale: 1.1;
-}
 .button-orange:hover{
     rotate: -15deg;
 }
@@ -137,53 +107,6 @@ h2 {
     animation-timing-function: linear;*/
 }
 
-#button-blue {
-    width: 400px;
-    height: 80px;
-    background-color: #388AA9;
-    margin: 20px;
-    display: inline-flex; /* Use flex to center text vertically */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    text-align: center; /* Center text horizontally */
-    border-radius: 4px;
-    font-size: 26px;
-    color:white;
-    padding-right: 35px;
-    padding-left: 35px;
-    font-family: sans-serif;
-    font-weight:bold;
-
-/* You can add animation/transition code to all elements here */
-}
-.button-orange {
-    width: 200px;
-    height: 60px;
-    margin: 20px;
-    display: inline-flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    border-radius: 4px;
-}
-.orange {
-    width: 200px;
-    height: 60px;
-    position:relative;
-    background-color: #E99F2F;
-    margin: 10%;
-    display: inline-flex; /* Use flex to center text vertically */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    text-align: center; /* Center text horizontally */
-    border-radius: 4px;
-    font-size: 26px;
-    color:black;
-    padding:20%;
-    font-family: sans-serif;
-    font-weight:bold;
-    z-index:0 ;
-}
-
 @keyframes getbig{
     from{ transform: scale(1)}
     to{ transform: scale(50)}
@@ -193,12 +116,132 @@ h2 {
     to{ transform: scale(.02)}
 }
 
-#hidden {
-    display: none;
+#hours {
+    color: black;
+    font-size: 2vh;
+}
+
+h3 {
+    margin: .25rem 0rem;
+}
+
+.hours {
+    margin: 5% 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+#bubble {
+    width: 40vw;
+}
+
+#item-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.menu-items {
+    width: 30vw;
+}
+
+.background-circle {
+    display:flex;
+    width: 28vw;
+    height: 28vw;
+    background-color: #E99F2F;
+    border-radius: 50%;
+    margin-top: -15rem;
+}
+
+#gingerbread-img, #mocha-img, #caramel-img {
+    width: 25vw;
+}
+
+#button-blue {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    width: 75vw;
+    height: 10vh;
+    padding: 0% 10%;
+    border-radius: 4px;
+
+    background-color: #388AA9;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+#button-blue:hover{
+    background-color: #4AA7C9;
+    scale: 1.1;
+}
+
+#order-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    width: 90vw;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    padding: 2vw;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vh;
+    background-color: #EBE2D4;
+}
+
+#artist-img {
+    right: 3rem;
+    z-index: 1;
+    height: 40vh;
+}
+
+#carousel {
+    max-width: 60vw;
+}
+
+.carousel-img {
+    position: relative;
+    left: 5vw;
+    width: 100%;
+    height: auto;
 }
 
 /* Add more styling for your content sections */
 .content-section {
-    padding: 50px;
+    padding: 2.5vh;
     background: #f4f4f4; /* Adjust background color as needed */
+}
+
+.image-container {
+    left: 10vw;
+    height: 18vh;
+    width: 60vw;
+    margin: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-container img {
+    margin: 0 10px; /* Adjust the margin as needed */
+    max-width: 100%;
+    height: auto;
+}
+
+.zondy-guy img {
+    position: relative;
+    left: 5vw;
+    width: 100%;
+    height: auto;
 }

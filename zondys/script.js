@@ -15,7 +15,7 @@ function changeStyle() {
 
       // Change the value of href attribute  
       // to change the css sheet. 
-      if (screen.width <= 1000) { 
+      if (screen.width <= 700) { 
           theme.setAttribute('href', 'style.css'); 
       } else { 
           theme.setAttribute('href', 'desktop-style.css'); 
@@ -30,7 +30,8 @@ function changeSlide() {
         if (i > slides.length)
             i=1;
         
-        slides[i].id = "hidden"
+        slides[i].id = "hidden";
+        console.log(slides[i].id);
         slides[i-1].id = null;
 }
 }
