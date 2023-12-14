@@ -102,7 +102,7 @@ svg {
 .button-orange:active .menutext{
     color: #E99F2F;
     transition: 1s;
-
+    rotate: 30deg;
 }
 
 @keyframes getbig{
@@ -165,7 +165,7 @@ h2 {
     padding: 0% 10%;
     border-radius: 4px;
     background-color: #388AA9;
-    color:red;
+    color:greenyellow;
     font-family: 'Josefin Sans', sans-serif; 
     font-weight: bold;
     font-size: 2.5vh;
