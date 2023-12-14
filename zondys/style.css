@@ -123,7 +123,7 @@ svg {
     scale: 1.1;
 }
 
-/* .orange {
+.orange {
     width: 200px;
     height: 60px;
     position:absolute;
@@ -141,7 +141,13 @@ svg {
     font-family: sans-serif;
     font-weight:bold;
     z-index: 0;
-} */
+    left: 45%;
+} 
+
+.menutext{
+    position: absolute;
+    left:45%;
+}
 
 @keyframes getbig{
     from{ transform: scale(1)}
