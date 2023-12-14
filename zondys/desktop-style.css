@@ -30,6 +30,10 @@ svg {
     border-radius: 50%;
 }
 
+#zondy-icon {
+    display: none;
+}
+
 #hamburger {
     display: flex;
     flex-direction: column;
@@ -244,9 +248,3 @@ h2 {
     height: auto;
 }
 
-.zondy-guy img {
-    position: relative;
-    left: 5vw;
-    width: 100%;
-    height: auto;
-}
