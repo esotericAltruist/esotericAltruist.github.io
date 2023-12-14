@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link id="theme" rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link id="theme" rel="stylesheet" href="style.css">
 
-    <script src="script.js"></script>
-    <title>Zondy's Cafe</title>
-  </head>
+  <script src="script.js"></script>
+  <title>Zondy's Cafe</title>
+</head>
 
-  <body>
-
- <!-- Navigation Bar -->
-<div id="navbar">
-</div>
+<body>
+  <img id="zondy-icon" src="zondy-mascot.png"></img>
 
   <div id="hamburger">
       <svg width="99" height="33" viewBox="0 0 99 53" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +22,12 @@
   
     <!-- Hero Section -->
     <section id="hero-section">
-        <img id="hero-img" src="zondy-photo.png"></img>
+        <div id="hero-container">
+          <div id="hero-text">Welcome to...</div>
+          <!-- <img id="zondy-logo" src="zondy-logo.png"></img> -->
+          <img id="hero-img" src="zondy-photo.png"></img>
+        </div>
+        
       <div id="hero-content">
         <div id="button-col">
             <a href="order.html" class="button-orange" id="element2">
@@ -64,11 +66,13 @@
         <div id="mocha" class="menu-items">
           <img id="mocha-img" src="mocha.png"></img>
             <div>Dark Peppermint Bark Mocha</div>
+            <div class="background-circle"></div>
         </div>
 
         <div id="caramel" class="menu-items">
           <img id="caramel-img" src="caramel.png"></img>
             <div>Salted Caramel Latte</div>
+            <div class="background-circle"></div>
         </div>
       </div>
     </div>
@@ -89,6 +93,7 @@
 
       <img id="arrow" src="arrow.png"></img>
       <img id="artist-img" src="artist.png"></img>
+      <div id="artist-circle"></div>
       <div id="carousel">
         <img class="carousel-img" src="carousel1.png"></img>
         <img id="hidden" class="carousel-img" src="carousel2.png"></img>
