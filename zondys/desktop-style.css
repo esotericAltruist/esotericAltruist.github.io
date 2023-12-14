@@ -147,7 +147,11 @@ h2 {
 }
 
 .menu-items {
-    width: 30vw;
+    text-align: center;
+}
+
+.menu-text {
+    margin-top: 50px;
 }
 
 .background-circle {
