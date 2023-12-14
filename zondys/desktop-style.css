@@ -224,12 +224,6 @@ h2 {
     background-color: #EBE2D4;
 }
 
-#artist-img {
-    right: 3rem;
-    z-index: 1;
-    height: 40vh;
-}
-
 #carousel {
     max-width: 60vw;
 }
