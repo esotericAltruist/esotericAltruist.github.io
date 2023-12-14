@@ -97,6 +97,7 @@ svg {
 .button-orange:active .orange{
     transition: 1s;
     transform: scale(50);
+    rotate: 30deg;
 }
 .button-orange:active .menutext{
     color: #E99F2F;
@@ -163,9 +164,8 @@ h2 {
     height: 10vh;
     padding: 0% 10%;
     border-radius: 4px;
-
     background-color: #388AA9;
-    color:yellow;
+    color:red;
     font-family: 'Josefin Sans', sans-serif; 
     font-weight: bold;
     font-size: 2.5vh;
