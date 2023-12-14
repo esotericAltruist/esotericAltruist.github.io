@@ -11,7 +11,7 @@ body, html {
     overflow: auto;
     font-family: 'Josefin Sans', sans-serif; 
     font-weight: bold;
-    background-color: #caa2a2;
+    background-color: #EBE2D4;
 }
 
 .centered-text {
@@ -30,6 +30,14 @@ svg {
     border-radius: 50%;
 }
 
+#zondy-icon {
+    max-width: 10vh;
+    max-height: 10vh;
+    position:absolute;
+    right: 2.5vw;
+    top: 7vh;
+}
+
 #hamburger {
     display: flex;
     flex-direction: column;
@@ -40,6 +48,12 @@ svg {
     justify-content: space-between;
     flex-direction: column;
     max-width: 100%;
+}
+
+#hero-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 40vh;
 }
 
 #hero-img {
@@ -76,7 +90,7 @@ svg {
     justify-content: space-evenly;
     flex-direction: column;
     font-size: 3vh;
-    filter: drop-shadow(.25rem .25rem  .25rem rgb(180, 111, 51))
+    filter: drop-shadow(.25rem .25rem  .25rem rgb(180, 111, 51));
 }
 
 
@@ -170,8 +184,10 @@ h2 {
     height: 10vh;
     padding: 0% 10%;
     border-radius: 4px;
+    border: none;
 
     background-color: #388AA9;
+    filter: drop-shadow(.25rem .25rem  .25rem #18566d);
     color:white;
     font-family: 'Josefin Sans', sans-serif; 
     font-weight: bold;
@@ -200,9 +216,19 @@ h2 {
 }
 
 #artist-img {
+    position: absolute;
     right: 3rem;
     z-index: 1;
     height: 40vh;
+}
+
+#artist-circle {
+    display:flex;
+    width: 28vw;
+    height: 28vw;
+    background-color: #E99F2F;
+    border-radius: 50%;
+    margin-top: -15rem;
 }
 
 #carousel {
@@ -210,7 +236,7 @@ h2 {
 }
 
 .carousel-img {
-    position: relative;
+    position: static;
     left: 5vw;
     width: 100%;
     height: auto;
