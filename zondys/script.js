@@ -1,5 +1,4 @@
-var theme = document.getElementsByTagName('link')[0]; 
-
+var theme = document.getElementsByTagName('link')[0];
 // Change the value of href attribute  
 // to change the css sheet. 
 if (screen.width <= 1000) { 
