@@ -3,9 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link id="theme" rel="stylesheet" href="style.css">
-
-    <script src="script.js"></script>
     <title>Order Page</title>
   </head>
 
@@ -22,11 +19,6 @@
         </svg>
     </div>
 
-    <div class="zondy-guy">
-      <img src="zondy-mascot.png" alt="Zondy Guy">
-      </div>
-  
-
     <!-- Section 1 -->
     <div id="section1" class="content-section">
       <div>
@@ -41,7 +33,58 @@
 
    <!-- Coffee Images Container -->
   <div class="image-container">
-    <img src="coffee1.png" alt="Coffeeimage1">
-    <img src="coffee2.png" alt="Coffeeimage2">
-    <img src="coffee3.png" alt="Coffeeimage3">
+    <img src="gingerbread.png" alt="Coffeeimage1">
+    <img src="mocha.png" alt="Coffeeimage2">
+    <img src="caramel.png" alt="Coffeeimage3">
   </div>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+display: flex;
+flex-direction: column;
+height: 100vh; /* Set the body to take up the full viewport height */
+margin: 0;  
+font-family: 'Josefin Sans', sans-serif;
+}
+
+.content-section {
+flex: 1; /* Grow to take available space */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.content-section h2 {
+font-family: 'Josefin Sans', sans-serif;
+}
+
+.image-container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.image-container img {
+max-width: 100%;
+height: auto;
+width: 100%;
+}
+
+#button-col {
+text-align: center;
+}
+
+
+.button-blue {
+background-color: #E99F2F;
+padding: 2vh 10vw;
+border-radius: 4px;
+text-decoration: none;
+margin-left: 20px;
+}
+
+</style>
