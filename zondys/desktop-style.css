@@ -11,7 +11,7 @@ body, html {
     overflow: auto;
     font-family: 'Josefin Sans', sans-serif; 
     font-weight: bold;
-    background-color: #caa2a2;
+    background-color: #F4F4F4;
 }
 
 .centered-text {
@@ -83,7 +83,9 @@ svg {
     filter: drop-shadow(.25rem .25rem  .25rem rgb(180, 111, 51))
 }
 
-
+#artist-img{
+    width:100vw;
+}
 .button-orange {
     background-color: #E99F2F;
     padding: 1.5vh 4vw;
