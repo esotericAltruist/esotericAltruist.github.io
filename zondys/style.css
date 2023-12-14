@@ -95,8 +95,9 @@ svg {
 .button-orange:active .menutext{
     color: #E99F2F;
     transition: 1s;
-    left:50%;
-    position: absolute;
+    /*animation-name: getsmall;
+    animation-duration: 1s;
+    animation-timing-function: linear;*/
 }
 
 #button-blue {
@@ -122,7 +123,7 @@ svg {
     scale: 1.1;
 }
 
-.orange {
+/* .orange {
     width: 200px;
     height: 60px;
     position:absolute;
@@ -140,8 +141,7 @@ svg {
     font-family: sans-serif;
     font-weight:bold;
     z-index: 0;
-    left: 50%;
-} 
+} */
 
 @keyframes getbig{
     from{ transform: scale(1)}
