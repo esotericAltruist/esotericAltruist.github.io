@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link id="theme" rel="stylesheet" href="style.css">
-
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
   <script src="script.js"></script>
   <title>Zondy's Cafe</title>
 </head>
@@ -23,7 +23,6 @@
     <!-- Hero Section -->
     <section id="hero-section">
         <div id="hero-container">
-          <!-- <img id="zondy-logo" src="zondy-logo.png"></img> -->
           <img id="hero-img" src="zondy-photo.png"></img>
         </div>
         
@@ -38,6 +37,8 @@
               <div class="orange" id="element5"></div>
             </a>
         </div>
+
+        <dotlottie-player src="https://lottie.host/fb7bf055-ea0f-4871-8c9e-2c38c3ea49bc/h92LTsEni9.lottie" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
         
         <div id="hours">
             <h3>HOURS</h3>
@@ -62,19 +63,19 @@
       <div id="item-container">
         <div id="gingerbread" class="menu-items">
           <img id="gingerbread-img" src="gingerbread.png"></img>
-          <div>Iced Gingerbread Cookie Latte</div>
+          <div class="menu-text">Iced Gingerbread Cookie Latte</div>
           <div class="background-circle"></div>
         </div>
 
         <div id="mocha" class="menu-items">
           <img id="mocha-img" src="mocha.png"></img>
-            <div>Dark Peppermint Bark Mocha</div>
+            <div class="menu-text">Dark Peppermint Bark Mocha</div>
             <div class="background-circle"></div>
         </div>
 
         <div id="caramel" class="menu-items">
           <img id="caramel-img" src="caramel.png"></img>
-            <div>Salted Caramel Latte</div>
+            <div class="menu-text">Salted Caramel Latte</div>
             <div class="background-circle"></div>
         </div>
       </div>
