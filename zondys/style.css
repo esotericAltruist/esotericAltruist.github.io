@@ -80,8 +80,6 @@ svg {
     text-decoration: none;
 }
 
-
-
 .button-orange:visited {
     color: black;
 }
@@ -112,7 +110,7 @@ svg {
     text-align: center; 
     border-radius: 4px;
     font-size: 26px;
-    color:blue;
+    color:white;
     padding-right: 35px;
     padding-left: 35px;
     font-family: sans-serif;
@@ -144,10 +142,6 @@ svg {
     z-index: 0;
     left: 50%;
 } 
-.menutext{
-    position: absolute;
-    left:50%;
-}
 
 @keyframes getbig{
     from{ transform: scale(1)}
